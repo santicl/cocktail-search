@@ -1,0 +1,596 @@
+{
+    "cocktails": [
+      {
+        "name": "Mojito",
+        "type": "Clásico",
+        "img": "mojito.png",
+        "ingredients": [
+          "Ron blanco",
+          "Menta fresca",
+          "Azúcar",
+          "Jugo de limón",
+          "Agua con gas",
+          "Hielo"
+        ],
+        "preparation": "En un vaso, machaca la menta con el azúcar y el jugo de limón. Luego, añade el ron y mezcla bien. Agrega hielo y completa con agua con gas. Decora con hojas de menta y rodajas de limón.",
+        "recommendations": "Servir bien frío en un vaso alto."
+      },
+      {
+        "name": "Daiquiri",
+        "type": "Clásico",
+        "img": "daiquiri.png",
+        "ingredients": [
+          "Ron blanco",
+          "Jugo de limón",
+          "Jarabe simple"
+        ],
+        "preparation": "Mezcla el ron, el jugo de limón y el jarabe simple en una coctelera con hielo. Agita bien y cuela la mezcla en una copa previamente enfriada. Decora con una rodaja de limón.",
+        "recommendations": "Puede servirse en una copa de cóctel previamente enfriada."
+      },
+      {
+        "name": "Margarita",
+        "type": "Clásico",
+        "img": "margarita.png",
+        "ingredients": [
+          "Tequila",
+          "Triple sec",
+          "Jugo de limón",
+          "Sal",
+          "Hielo"
+        ],
+        "preparation": "Humedece el borde de una copa con jugo de limón y pásalo por sal para escarcharla. Mezcla el tequila, el triple sec y el jugo de limón en una coctelera con hielo. Agita bien y cuela la mezcla en la copa.",
+        "recommendations": "Sirve en una copa de borde escarchado y decora con una rodaja de limón."
+      },
+      {
+        "name": "Piña Colada",
+        "type": "Clásico",
+        "img": "piña-colada.png",
+        "ingredients": [
+          "Ron blanco",
+          "Crema de coco",
+          "Jugo de piña",
+          "Hielo"
+        ],
+        "preparation": "Mezcla el ron, la crema de coco y el jugo de piña en una licuadora con hielo. Sirve en un vaso alto y decora con una rodaja de piña y una cereza.",
+        "recommendations": "Ideal para disfrutar en climas cálidos."
+      },
+      {
+        "name": "Cosmopolitan",
+        "type": "Clásico",
+        "img": "Cosmopolitan.png",
+        "ingredients": [
+          "Vodka",
+          "Licor de naranja",
+          "Jugo de arándano",
+          "Jugo de lima",
+          "Hielo"
+        ],
+        "preparation": "Mezcla todos los ingredientes en una coctelera con hielo. Agita bien y cuela en una copa de cóctel previamente enfriada. Decora con una cáscara de lima.",
+        "recommendations": "Sirve en una copa de cóctel y disfruta de su sabor refrescante."
+      },
+      {
+        "name": "Martini",
+        "type": "Clásico",
+        "img": "Martini.png",
+        "ingredients": [
+          "Gin",
+          "Vermut seco",
+          "Aceituna o twist de limón"
+        ],
+        "preparation": "Revuelve o agita el gin y el vermut con hielo en una coctelera. Cuela y sirve en una copa de cóctel previamente enfriada. Decora con una aceituna o twist de limón.",
+        "recommendations": "Puedes elegir entre gin seco o dulce según tu preferencia."
+      },
+      {
+        "name": "Negroni",
+        "type": "Clásico",
+        "img": "Negroni.png",
+        "ingredients": [
+          "Gin",
+          "Vermut rojo",
+          "Campari"
+        ],
+        "preparation": "Mezcla los ingredientes en un vaso old fashioned con hielo. Revuelve bien y decora con una rodaja de naranja.",
+        "recommendations": "Su sabor amargo puede ser ajustado según el tipo de vermut utilizado."
+      },
+      {
+        "name": "Whiskey Sour",
+        "type": "Clásico",
+        "img": "Whiskey Sour.png",
+        "ingredients": [
+          "Bourbon",
+          "Jugo de limón",
+          "Jarabe de azúcar",
+          "Clara de huevo",
+          "Hielo"
+        ],
+        "preparation": "Combina el bourbon, el jugo de limón, el jarabe de azúcar y la clara de huevo en una coctelera con hielo. Agita bien y cuela en una copa. Decora con una rodaja de limón.",
+        "recommendations": "El uso de clara de huevo le da una textura especial."
+      },
+      {
+        "name": "Mai Tai",
+        "type": "Clásico",
+        "img": "Mai Tai.png",
+        "ingredients": [
+          "Ron blanco",
+          "Ron oscuro",
+          "Licor de naranja",
+          "Licor de almendra",
+          "Jugo de lima",
+          "Jarabe de almendra",
+          "Hielo"
+        ],
+        "preparation": "Mezcla los licores, el jugo de lima y el jarabe de almendra en una coctelera con hielo. Sirve en un vaso alto con hielo y decora con una rodaja de lima y una ramita de menta.",
+        "recommendations": "El jarabe de almendra es clave para su sabor característico."
+      },
+      {
+        "name": "Caipirinha",
+        "type": "Clásico",
+        "img": "Caipirinha.png",
+        "ingredients": [
+          "Cachaça",
+          "Limón",
+          "Azúcar",
+          "Hielo"
+        ],
+        "preparation": "Corta el limón en trozos, añade azúcar y machaca en un vaso. Luego, agrega la cachaça y mezcla bien. Añade hielo y remueve.",
+        "recommendations": "Se puede variar la fruta utilizada para darle diferentes sabores."
+      },
+      {
+        "name": "Moscow Mule",
+        "type": "Clásico",
+        "img": "Moscow Mule.png",
+        "ingredients": [
+          "Vodka",
+          "Jugo de limón",
+          "Cerveza de jengibre",
+          "Hielo"
+        ],
+        "preparation": "Mezcla vodka y jugo de limón en un vaso con hielo. Completa con cerveza de jengibre y mezcla suavemente.",
+        "recommendations": "Tradicionalmente se sirve en una taza de cobre."
+      },
+      {
+        "name": "Pisco Sour",
+        "type": "Clásico",
+        "img": "Pisco Sour.png",
+        "ingredients": [
+          "Pisco",
+          "Jugo de limón",
+          "Jarabe simple",
+          "Clara de huevo",
+          "Bitter de Angostura",
+          "Hielo"
+        ],
+        "preparation": "Agita vigorosamente pisco, jugo de limón, jarabe simple y clara de huevo en una coctelera con hielo. Cuela en un vaso y decora con unas gotas de bitter de Angostura.",
+        "recommendations": "La clara de huevo le da una textura espumosa única."
+      },
+      {
+        "name": "Blue Lagoon",
+        "type": "Exótico",
+        "img": "Blue Lagoon.png",
+        "ingredients": [
+          "Vodka",
+          "Blue Curaçao",
+          "Limonada",
+          "Hielo"
+        ],
+        "preparation": "Mezcla vodka y Blue Curaçao en un vaso con hielo. Completa con limonada y mezcla suavemente.",
+        "recommendations": "Sirve en un vaso alto y decora con una rodaja de limón."
+      },
+      {
+        "name": "Singapore Sling",
+        "type": "Clásico",
+        "img": "Singapore Sling.png",
+        "ingredients": [
+          "Ginebra",
+          "Licor de cereza",
+          "Licor de naranja",
+          "Jugo de lima",
+          "Agua con gas",
+          "Granadina",
+          "Hielo"
+        ],
+        "preparation": "Agita ginebra, licores, jugo de lima y granadina en una coctelera con hielo. Cuela en un vaso alto con hielo y completa con agua con gas.",
+        "recommendations": "Decora con una rodaja de naranja y una cereza."
+      },
+      {
+        "name": "Tom Collins",
+        "type": "Clásico",
+        "img": "Tom Collins.png",
+        "ingredients": [
+          "Ginebra",
+          "Jugo de limón",
+          "Jarabe simple",
+          "Agua con gas",
+          "Hielo"
+        ],
+        "preparation": "Mezcla ginebra, jugo de limón y jarabe simple en una coctelera con hielo. Cuela en un vaso alto con hielo. Completa con agua con gas.",
+        "recommendations": "Decora con una rodaja de limón y una cereza."
+      },
+      {
+        "name": "Sangría",
+        "type": "Clásico",
+        "img": "Sangría.png",
+        "ingredients": [
+          "Vino tinto",
+          "Brandy",
+          "Licor de naranja",
+          "Jugo de naranja",
+          "Frutas variadas",
+          "Agua con gas",
+          "Hielo"
+        ],
+        "preparation": "Mezcla vino tinto, brandy, licor de naranja, jugo de naranja y frutas variadas en una jarra. Refrigera por unas horas. Sirve en vasos con hielo y completa con agua con gas.",
+        "recommendations": "Perfecto para una bebida refrescante en un día caluroso."
+      },
+      {
+        "name": "Tequila Sunrise",
+        "type": "Clásico",
+        "img": "Tequila Sunrise.png",
+        "ingredients": [
+          "Tequila",
+          "Jugo de naranja",
+          "Granadina",
+          "Rodaja de naranja",
+          "Cereza",
+          "Hielo"
+        ],
+        "preparation": "Mezcla tequila y jugo de naranja en un vaso con hielo. Vierte lentamente granadina para crear un efecto de amanecer. Remueve suavemente antes de beber.",
+        "recommendations": "Decora con una rodaja de naranja y una cereza."
+      },
+      {
+        "name": "White Russian",
+        "type": "Clásico",
+        "img": "White Russian.png",
+        "ingredients": [
+          "Vodka",
+          "Licor de café",
+          "Crema",
+          "Hielo"
+        ],
+        "preparation": "Mezcla vodka y licor de café en un vaso con hielo. Agrega crema y remueve suavemente.",
+        "recommendations": "Sirve en un vaso old fashioned."
+      },
+      {
+        "name": "Blue Hawaii",
+        "type": "Exótico",
+        "img": "Blue Hawaii.png",
+        "ingredients": [
+          "Ron",
+          "Blue Curaçao",
+          "Jugo de piña",
+          "Crema de coco",
+          "Hielo"
+        ],
+        "preparation": "Mezcla ron, Blue Curaçao, jugo de piña y crema de coco en una coctelera con hielo. Agita bien y cuela en un vaso con hielo.",
+        "recommendations": "Decora con una rodaja de piña y una cereza."
+      },
+      {
+        "name": "French 75",
+        "type": "Clásico",
+        "img": "French 75.png",
+        "ingredients": [
+          "Ginebra",
+          "Champán",
+          "Jugo de limón",
+          "Azúcar",
+          "Hielo"
+        ],
+        "preparation": "Agita ginebra, jugo de limón y azúcar en una coctelera con hielo. Cuela en una copa de champán y completa con champán.",
+        "recommendations": "Decora con una espiral de limón."
+      },
+      {
+        "name": "Black Russian",
+        "type": "Clásico",
+        "img": "Black Russian.png",
+        "ingredients": [
+          "Vodka",
+          "Licor de café",
+          "Hielo"
+        ],
+        "preparation": "Mezcla vodka y licor de café en un vaso con hielo. Remueve suavemente.",
+        "recommendations": "Sirve en un vaso old fashioned."
+      },
+      {
+        "name": "Irish Coffee",
+        "type": "Clásico",
+        "img": "Irish Coffee.png",
+        "ingredients": [
+          "Whiskey irlandés",
+          "Café caliente",
+          "Azúcar moreno",
+          "Crema batida"
+        ],
+        "preparation": "Vierte whiskey y café caliente en un vaso. Agrega azúcar moreno al gusto y añade crema batida por encima.",
+        "recommendations": "Sirve en una taza de vidrio."
+      },
+      {
+        "name": "Mimosa",
+        "type": "Clásico",
+        "img": "Mimosa.png",
+        "ingredients": [
+          "Champán",
+          "Jugo de naranja"
+        ],
+        "preparation": "Mezcla champán y jugo de naranja en una copa de champán.",
+        "recommendations": "Mejor servido frío."
+      },
+      {
+        "name": "Bloody Mary",
+        "type": "Clásico",
+        "img": "Bloody Mary.png",
+        "ingredients": [
+          "Vodka",
+          "Jugo de tomate",
+          "Jugo de limón",
+          "Salsa Worcestershire",
+          "Tabasco",
+          "Sal",
+          "Pimienta",
+          "Apio",
+          "Hielo"
+        ],
+        "preparation": "Mezcla vodka, jugo de tomate, jugo de limón, salsa Worcestershire, Tabasco, sal y pimienta en un vaso con hielo. Remueve bien. Decora con una ramita de apio.",
+        "recommendations": "Ajusta el nivel de picante según el gusto."
+      },
+      {
+        "name": "Gin and Tonic",
+        "type": "Clásico",
+        "img": "Gin and Tonic.png",
+        "ingredients": [
+          "Ginebra",
+          "Agua tónica",
+          "Limón",
+          "Hielo"
+        ],
+        "preparation": "Vierte ginebra y agua tónica sobre hielo en un vaso. Exprime rodajas de limón y agrégalas al cóctel.",
+        "recommendations": "Sirve en un vaso alto."
+      },
+      {
+        "name": "Long Island Iced Tea",
+        "type": "Clásico",
+        "img": "Long Island Iced Tea.png",
+        "ingredients": [
+          "Vodka",
+          "Ron",
+          "Ginebra",
+          "Tequila",
+          "Triple sec",
+          "Jugo de limón",
+          "Jarabe simple",
+          "Refresco de cola",
+          "Hielo"
+        ],
+        "preparation": "Mezcla vodka, ron, ginebra, tequila, triple sec, jugo de limón y jarabe simple en un vaso con hielo. Completa con refresco de cola.",
+        "recommendations": "Remueve suavemente y decora con una rodaja de limón."
+      },
+      {
+        "name": "Bellini",
+        "type": "Clásico",
+        "img": "Bellini.png",
+        "ingredients": [
+          "Prosecco",
+          "Puré de durazno"
+        ],
+        "preparation": "Vierte puré de durazno en una copa de champán y lentamente agrega Prosecco.",
+        "recommendations": "Usa ingredientes refrigerados para un mejor sabor."
+      },
+      {
+        "name": "Manhattan",
+        "type": "Clásico",
+        "img": "Manhattan.png",
+        "ingredients": [
+          "Whisky de centeno",
+          "Vermut dulce",
+          "Angostura",
+          "Cerezas al marrasquino",
+          "Hielo"
+        ],
+        "preparation": "Mezcla whisky de centeno, vermut dulce y unas gotas de angostura en un vaso mezclador con hielo. Cuela y sirve en una copa de cóctel previamente enfriada.",
+        "recommendations": "Decora con una cereza al marrasquino."
+      },
+      {
+        "name": "Old Fashioned",
+        "type": "Clásico",
+        "img": "Old Fashioned.png",
+        "ingredients": [
+          "Whisky bourbon",
+          "Azúcar",
+          "Angostura",
+          "Agua con gas",
+          "Cáscara de naranja",
+          "Cerezas al marrasquino"
+        ],
+        "preparation": "Disuelve azúcar y unas gotas de angostura en un vaso. Añade whisky bourbon y un poco de agua con gas. Agrega hielo y mezcla.",
+        "recommendations": "Decora con una cáscara de naranja y una cereza al marrasquino."
+      },
+      {
+        "name": "Rob Roy",
+        "type": "Clásico",
+        "img": "Rob Roy.png",
+        "ingredients": [
+          "Whisky escocés",
+          "Vermut dulce",
+          "Angostura",
+          "Cerezas al marrasquino",
+          "Hielo"
+        ],
+        "preparation": "Mezcla whisky escocés, vermut dulce y unas gotas de angostura en un vaso mezclador con hielo. Cuela y sirve en una copa de cóctel previamente enfriada.",
+        "recommendations": "Decora con una cereza al marrasquino."
+      },
+      {
+        "name": "Corpse Reviver No. 2",
+        "type": "Clásico",
+        "img": "Corpse Reviver No. 2.png",
+        "ingredients": [
+          "Ginebra",
+          "Licor de naranja",
+          "Licor de hierbas",
+          "Jugo de limón",
+          "Absenta",
+          "Hielo"
+        ],
+        "preparation": "Mezcla ginebra, licor de naranja, licor de hierbas y jugo de limón en una coctelera con hielo. Cuela en una copa y añade una gota de absenta.",
+        "recommendations": "Utiliza absenta con moderación, es para aromatizar, no para darle sabor."
+      },
+      {
+        "name": "Vieux Carré",
+        "type": "Clásico",
+        "img": "Vieux Carré.png",
+        "ingredients": [
+          "Whisky de centeno",
+          "Brandy",
+          "Vermut dulce",
+          "Licor de Benedictine",
+          "Angostura",
+          "Cerezas al marrasquino",
+          "Hielo"
+        ],
+        "preparation": "Mezcla whisky de centeno, brandy, vermut dulce, licor de Benedictine y unas gotas de angostura en un vaso mezclador con hielo. Cuela y sirve en una copa de cóctel.",
+        "recommendations": "Decora con una cereza al marrasquino."
+      },
+      {
+        "name": "Sazerac",
+        "type": "Clásico",
+        "img": "Sazerac.png",
+        "ingredients": [
+          "Whisky de centeno",
+          "Azúcar",
+          "Peychaud’s Bitters",
+          "Absenta",
+          "Cáscara de limón",
+          "Hielo"
+        ],
+        "preparation": "Enfría un vaso rocíandolo con absenta. En otro vaso mezcla azúcar, Peychaud’s Bitters y whisky de centeno con hielo. Cuela en el vaso enfriado y añade una cáscara de limón.",
+        "recommendations": "No exageres con la absenta, solo es para dar aroma."
+      },
+      {
+        "name": "Boulevardier",
+        "type": "Clásico",
+        "img": "Boulevardier.png",
+        "ingredients": [
+          "Whisky bourbon",
+          "Vermut dulce",
+          "Campari",
+          "Cerezas al marrasquino",
+          "Hielo"
+        ],
+        "preparation": "Mezcla whisky bourbon, vermut dulce y Campari en un vaso con hielo. Remueve y sirve en una copa de cóctel.",
+        "recommendations": "Decora con una cereza al marrasquino."
+      },
+      {
+        "name": "Jungle Bird",
+        "type": "Exótico",
+        "img": "Jungle Bird.png",
+        "ingredients": [
+          "Ron oscuro",
+          "Campari",
+          "Jugo de piña",
+          "Jugo de lima",
+          "Sirope de azúcar",
+          "Hielo"
+        ],
+        "preparation": "Mezcla ron oscuro, Campari, jugo de piña, jugo de lima y sirope de azúcar en una coctelera con hielo. Cuela en un vaso con hielo.",
+        "recommendations": "Decora con una rodaja de piña o una hoja de menta."
+      },
+      {
+        "name": "Zombie",
+        "type": "Exótico",
+        "img": "Zombie.png",
+        "ingredients": [
+          "Ron blanco",
+          "Ron dorado",
+          "Ron añejo",
+          "Licor de naranja",
+          "Licor de almendra",
+          "Jugo de limón",
+          "Jugo de piña",
+          "Sirope de granadina",
+          "Hielo"
+        ],
+        "preparation": "Mezcla todos los rones, licor de naranja, licor de almendra, jugo de limón, jugo de piña y sirope de granadina en una coctelera con hielo. Cuela en un vaso alto con hielo.",
+        "recommendations": "Decora con una rodaja de naranja y una cereza al marrasquino."
+      },
+      {
+        "name": "Mojito de Maracuyá",
+        "type": "Exótico",
+        "img": "Mojito de Maracuyá.png",
+        "ingredients": [
+          "Ron blanco",
+          "Maracuyá",
+          "Menta",
+          "Jugo de limón",
+          "Azúcar",
+          "Agua mineral",
+          "Hielo"
+        ],
+        "preparation": "En un vaso, mezcla maracuyá, menta, jugo de limón y azúcar. Agrega ron y machaca ligeramente. Completa con agua mineral y hielo.",
+        "recommendations": "Decora con una ramita de menta y una rodaja de limón."
+      },
+      {
+        "name": "Tiki Punch",
+        "type": "Exótico",
+        "img": "Tiki Punch.png",
+        "ingredients": [
+          "Ron",
+          "Ron añejo",
+          "Ron oscuro",
+          "Licor de naranja",
+          "Licor de almendra",
+          "Jugo de piña",
+          "Jugo de limón",
+          "Sirope de granadina",
+          "Hielo"
+        ],
+        "preparation": "Mezcla ron, ron añejo, ron oscuro, licor de naranja, licor de almendra, jugo de piña, jugo de limón y sirope de granadina en una coctelera con hielo. Cuela y sirve en un vaso con hielo.",
+        "recommendations": "Decora con una rodaja de piña o una sombrilla."
+      },
+      {
+        "name": "Coco Loco",
+        "type": "Exótico",
+        "img": "Coco Loco.png",
+        "ingredients": [
+          "Ron blanco",
+          "Ron oscuro",
+          "Ron añejo",
+          "Crema de coco",
+          "Jugo de piña",
+          "Jugo de naranja",
+          "Leche de coco",
+          "Hielo"
+        ],
+        "preparation": "Mezcla ron blanco, ron oscuro, ron añejo, crema de coco, jugo de piña, jugo de naranja y leche de coco en una licuadora con hielo. Sirve en un vaso alto.",
+        "recommendations": "Decora con una rodaja de piña y una sombrilla."
+      },
+      {
+        "name": "Café Brasileño",
+        "type": "Exótico",
+        "img": "Café Brasileño.png",
+        "ingredients": [
+          "Cachaça",
+          "Licor de café",
+          "Café caliente",
+          "Azúcar",
+          "Crema batida"
+        ],
+        "preparation": "En un vaso caliente, mezcla cachaça, licor de café, café caliente y azúcar. Cubre con crema batida.",
+        "recommendations": "Sirve con una cuchara para mezclar la crema batida con el resto."
+      },
+      {
+        "name": "Tamarind Margarita",
+        "type": "Exótico",
+        "img": "Tamarind Margarita.png",
+        "ingredients": [
+          "Tequila",
+          "Licor de naranja",
+          "Jugo de limón",
+          "Pulpa de tamarindo",
+          "Azúcar",
+          "Sal",
+          "Hielo"
+        ],
+        "preparation": "Mezcla tequila, licor de naranja, jugo de limón, pulpa de tamarindo y azúcar en una licuadora con hielo. Escarcha el borde de la copa con sal y sirve.",
+        "recommendations": "Decora con una rodaja de limón o una rodaja de tamarindo."
+      }
+    ]
+  }
+  
