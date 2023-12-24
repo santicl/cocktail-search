@@ -15,11 +15,27 @@
     justify-content: baseline;
     align-items: center;
     flex-direction: column;
+    position: relative;
     gap: 10px;
     width: 90%;
     height: 99%;
     background: white;
     border-radius: 12px;
+}
+
+.BackGround-Pepper__Container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid rgb(156, 65, 65);
+    color: rgb(156, 65, 65);
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
 }
 
 .ContentImage-Pepper {
