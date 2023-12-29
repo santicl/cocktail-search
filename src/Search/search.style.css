@@ -194,10 +194,22 @@ h2 {
 }
 
 .Item-Result-Img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     width: 50px;
     height: 50px;
     background: rgb(214, 213, 213);
     border-radius: 8px;
+}
+
+.Loading {
+    position: absolute;
+    text-align: center;
+    margin: 0 0 auto;
+    color: black;
+    font-size: 15px;
 }
 
 .Item-Result-Img svg {

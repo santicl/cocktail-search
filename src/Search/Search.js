@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../Search/search.style.css';
 import Cocktail from '../Search/cocktails.json';
 import PepperPopup from './Popup/Components/Pepper/PepperPopup';
@@ -8,6 +8,10 @@ function Search() {
     const [show, setShow] = useState(false);
     const [cocktailItem, setCocktailItem] = useState({});
     const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setLoading(true);
+    }, [keyword]);
 
 
     const cocktails = Cocktail.cocktails;
@@ -76,7 +80,7 @@ function Search() {
                                                 return (
                                                     <div onClick={getTitle} key={i} title={item.name} className='Item-Result'>
                                                         <div title={item.name} className='Item-Result-Img'>
-                                                        {loading && <p>...</p>}
+                                                        {loading && <p className='Loading'>...</p>}
                                                             <img
                                                                 title={item.name}
                                                                 src={PATH(`./${item.img}`)}
