@@ -58,7 +58,7 @@ function Search() {
                         </div>
 
                         <section className='Results-Search'>
-                            <div className='Results-Search__Container'>
+                            <div className={ keyword === '' ? 'Results-Search__Container': 'Results-Search__Container active' }>
 
 
                                 <div className='Information-Results'>

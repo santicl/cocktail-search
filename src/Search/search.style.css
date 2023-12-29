@@ -66,6 +66,8 @@ h2 {
     border: 1px solid rgb(143, 31, 31);
     backdrop-filter: blur(7px);
     border-radius: 8px;
+    padding-left: 15px;
+    gap: 5px;
     width: 50%;
     height: 35px;
 }
@@ -103,7 +105,7 @@ h2 {
     margin-top: 5px;
 }
 
-.Results-Search__Container {
+.Results-Search__Container.active {
     flex-direction: column;
     background-color: rgb(255, 255, 255, .5);
     backdrop-filter: blur(7px);
@@ -253,7 +255,7 @@ h2 {
     }
 
     .Search-Section {
-        background-position: right;
+        background-position: left;
     }
 }
 
