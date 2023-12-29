@@ -26,7 +26,7 @@ function HeaderNav() {
                     <div className="Header-Information__InText">
                         <h1>Encuentra o Personaliza tu receta</h1>
                         <p>
-                            Realiza tu búsqueda fácil de alguna receta de coctel que no recuerdas en el momento o buscapor ingredientes y recibe sigerencias personalizadas.
+                            Realiza tu búsqueda fácil de alguna receta de coctel que no recuerdas en el momento o buscapor ingredientes y recibe sigerencias personalizadas con IA.
                         </p>
                         <div>
                             <button>Realizar búsqueda</button>

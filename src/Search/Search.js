@@ -7,6 +7,8 @@ function Search() {
     const [keyword, setKeyword] = useState('');
     const [show, setShow] = useState(false);
     const [cocktailItem, setCocktailItem] = useState({});
+    const [loading, setLoading] = useState(true);
+
 
     const cocktails = Cocktail.cocktails;
 
@@ -58,7 +60,7 @@ function Search() {
                         </div>
 
                         <section className='Results-Search'>
-                            <div className={ keyword === '' ? 'Results-Search__Container': 'Results-Search__Container active' }>
+                            <div className={keyword === '' ? 'Results-Search__Container' : 'Results-Search__Container active'}>
 
 
                                 <div className='Information-Results'>
@@ -74,7 +76,13 @@ function Search() {
                                                 return (
                                                     <div onClick={getTitle} key={i} title={item.name} className='Item-Result'>
                                                         <div title={item.name} className='Item-Result-Img'>
-                                                            <img title={item.name} src={PATH(`./${item.img}`)} />
+                                                        {loading && <p>...</p>}
+                                                            <img
+                                                                title={item.name}
+                                                                src={PATH(`./${item.img}`)}
+                                                                onLoad={() => setLoading(false)} // Cambia el estado a falso cuando la imagen se carga
+                                                                style={{ visibility: loading ? 'hidden' : 'visible' }} // Cambia la visibilidad de la imagen mientras se carga
+                                                            />
                                                         </div>
 
                                                         <div title={item.name} className='Item-Result-Name'>
