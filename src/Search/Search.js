@@ -70,7 +70,7 @@ function Search() {
                                 <div className='Results'>
                                     <div className='Results__Container'>
                                         {
-                                            results.length == 0 ? <p className='Not-write'>No has escrito nada.</p> : results.map((item, i) => {
+                                            keyword === '' ? <p className='Not-write'>No has escrito nada.</p> : results.length === 0 ? <p>No se encontro nada</p> : results.map((item, i) => {
                                                 return (
                                                     <div onClick={getTitle} key={i} title={item.name} className='Item-Result'>
                                                         <div title={item.name} className='Item-Result-Img'>

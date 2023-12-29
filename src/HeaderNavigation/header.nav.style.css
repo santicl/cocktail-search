@@ -144,6 +144,7 @@ header nav ul li a:hover {
 }
 
 .Header-Information__InText h1 {
+    text-align: center;
     font-size: 90px;
     font-family: 'Oswald', sans-serif;
     padding-bottom: 0;

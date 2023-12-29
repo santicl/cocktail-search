@@ -103,6 +103,7 @@ h2 {
     align-items: start;
     width: 71%;
     margin-top: 5px;
+    transition: all ease-in-out .2s;
 }
 
 .Results-Search__Container.active {
