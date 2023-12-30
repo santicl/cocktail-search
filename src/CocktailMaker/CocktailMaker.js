@@ -6,7 +6,7 @@ function CocktailMaker() {
             <div className="CocktailMaker-Section__Container">
                 <span className='Span'>With IA <span>TensorFlow</span></span>
                 <h2>Personaliza tu búsqueda</h2>
-                <p>Busca por ingredientes: Ron, Maracuya</p>
+                <p>Busca por ingredientes: Ron, Maracuyá</p>
             </div>
         </section> 
     )
