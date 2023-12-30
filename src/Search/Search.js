@@ -47,27 +47,26 @@ function Search() {
 
     let results = [];
 
-    if (keyword || leagueInput.current.value) {
-      if (leagueInput.current.value && keyword) {
-        const ingredientToExclude = leagueInput.current.value.toLowerCase();
+    if (keyword && leagueInput.current && leagueInput.current.value) {
+      const ingredientToExclude = leagueInput.current.value.toLowerCase();
     
-        // Filtrar los cócteles que no contienen el ingrediente específico y no coinciden con la keyword
-        results = cocktails.filter((cocktail) => {
-          const hasIngredient = cocktail.ingredients.some(
-            (ingredient) => ingredient.toLowerCase() === ingredientToExclude
-          );
-    
-          const matchesKeyword = cocktail.name.toLowerCase().includes(keyword.toLowerCase());
-    
-          // Retornar solo los cócteles que no contienen el ingrediente específico y no coinciden con la keyword
-          return !hasIngredient && matchesKeyword;
-        });
-      } else {
-        results = cocktails.filter((cocktail) =>
-          cocktail.name.toLowerCase().includes(keyword.toLowerCase())
+      // Filtrar los cócteles que no contienen el ingrediente específico y no coinciden con la keyword
+      results = cocktails.filter((cocktail) => {
+        const hasIngredient = cocktail.ingredients.some(
+          (ingredient) => ingredient.toLowerCase() === ingredientToExclude
         );
-      }
+    
+        const matchesKeyword = cocktail.name.toLowerCase().includes(keyword.toLowerCase());
+    
+        // Retornar solo los cócteles que no contienen el ingrediente específico y no coinciden con la keyword
+        return !hasIngredient && matchesKeyword;
+      });
+    } else if (keyword) {
+      results = cocktails.filter((cocktail) =>
+        cocktail.name.toLowerCase().includes(keyword.toLowerCase())
+      );
     }
+    
     
     
 
