@@ -3,6 +3,10 @@ import "./header.nav.style.css";
 import Brand from '../img/brand.png';
 
 function HeaderNav() {
+    const mouseDownEffect = () => {
+        const nextSection = document.getElementById('next-section');
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
     return (
 
         <header>
@@ -27,7 +31,7 @@ function HeaderNav() {
                             Realiza tu búsqueda fácil de alguna receta de coctel que no recuerdas en el momento o buscapor ingredientes y recibe sigerencias personalizadas.
                         </p>
                         <div>
-                            <button>Realizar búsqueda</button>
+                            <button onClick={mouseDownEffect}>Realizar búsqueda</button>
                         </div>
                     </div>
                 </section>

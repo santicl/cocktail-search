@@ -85,7 +85,7 @@ function Search() {
     }
 
     return (
-        <section className="Search-Section">
+        <section id='next-section' className="Search-Section">
             <div className="Search-Section__Container">
 
                 <h2>Realiza tu búsqueda</h2>
