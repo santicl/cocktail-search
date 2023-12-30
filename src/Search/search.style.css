@@ -289,8 +289,13 @@ h2 {
     font-weight: 600;
     background: rgb(255,55,55);
     background: linear-gradient(90deg, rgb(179, 36, 36) 0%, rgb(200, 77, 77) 48%, rgba(216,103,103,1) 84%);
-    color: white;
+    color: white !important;
     cursor: pointer;
+}
+
+.selectOption input::placeholder {
+    color: white;
+    font-size: 10px;
 }
 
 .options {
