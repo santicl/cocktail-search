@@ -47,19 +47,20 @@ function Search() {
 
     let results = [];
 
-    if (keyword) {
-      if (leagueInput.current.value) {
+    if (keyword || leagueInput.current.value) {
+      if (leagueInput.current.value && keyword) {
         const ingredientToExclude = leagueInput.current.value.toLowerCase();
     
-        // Filtrar los cócteles que no contienen el ingrediente específico
+        // Filtrar los cócteles que no contienen el ingrediente específico y no coinciden con la keyword
         results = cocktails.filter((cocktail) => {
-          // Verificar si el ingrediente a excluir está presente en el array de ingredientes del cóctel
           const hasIngredient = cocktail.ingredients.some(
             (ingredient) => ingredient.toLowerCase() === ingredientToExclude
           );
     
-          // Retornar solo los cócteles que no contienen el ingrediente específico
-          return !hasIngredient;
+          const matchesKeyword = cocktail.name.toLowerCase().includes(keyword.toLowerCase());
+    
+          // Retornar solo los cócteles que no contienen el ingrediente específico y no coinciden con la keyword
+          return !hasIngredient && matchesKeyword;
         });
       } else {
         results = cocktails.filter((cocktail) =>
@@ -67,6 +68,7 @@ function Search() {
         );
       }
     }
+    
     
 
     const setTitleToPopup = (title) => {
