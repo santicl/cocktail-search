@@ -45,6 +45,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     flex-direction: column;
     width: 100%;
 }
@@ -160,8 +161,8 @@ h2 {
 
 .Results__Container {
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 15px;
     width: 100%;
@@ -259,10 +260,19 @@ h2 {
     margin: 0;
 }
 
-.Options {
-    position: absolute;
-    top: 45px;
-    right: 24%;
+.Options-S {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.Options__Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
 }
 
 .Options__Container span {
@@ -300,7 +310,7 @@ h2 {
 
 .options {
     position: absolute;
-    width: 100%;
+    width: 200px;
     max-height: 220px;
     background: rgb(255,55,55);
     background: linear-gradient(90deg, rgb(179, 36, 36) 0%, rgb(200, 77, 77) 48%, rgba(216,103,103,1) 84%);
@@ -363,6 +373,14 @@ h2 {
     .Search-Section {
         background-position: left;
     }
+
+    .Options-S {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 39px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -412,10 +430,11 @@ h2 {
         color: white;
         cursor: pointer;
     }
+    .Options-S {
+        width: 90%;
+    }
     
     .options {
-        position: absolute;
-        width: 100%;
         max-height: 220px;
         border-radius: 10px;
         top: 100%;

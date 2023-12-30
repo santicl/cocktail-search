@@ -30,14 +30,14 @@ function Search() {
 
     const getUniqueIngredients = () => {
         const allIngredients = cocktails.reduce((accumulator, cocktail) => {
-          accumulator.push(...cocktail.ingredients);
-          return accumulator;
+            accumulator.push(...cocktail.ingredients);
+            return accumulator;
         }, []);
-    
+
         // Usar Set para obtener valores únicos y convertirlo a un array
         const uniqueIngredients = Array.from(new Set(allIngredients));
         return uniqueIngredients;
-      };
+    };
 
     const PATH = require.context('../img/img-cocktail', true);
 
@@ -48,27 +48,27 @@ function Search() {
     let results = [];
 
     if (keyword && leagueInput.current && leagueInput.current.value) {
-      const ingredientToExclude = leagueInput.current.value.toLowerCase();
-    
-      // Filtrar los cócteles que no contienen el ingrediente específico y no coinciden con la keyword
-      results = cocktails.filter((cocktail) => {
-        const hasIngredient = cocktail.ingredients.some(
-          (ingredient) => ingredient.toLowerCase() === ingredientToExclude
-        );
-    
-        const matchesKeyword = cocktail.name.toLowerCase().includes(keyword.toLowerCase());
-    
-        // Retornar solo los cócteles que no contienen el ingrediente específico y no coinciden con la keyword
-        return !hasIngredient && matchesKeyword;
-      });
+        const ingredientToExclude = leagueInput.current.value.toLowerCase();
+
+        // Filtrar los cócteles que no contienen el ingrediente específico y no coinciden con la keyword
+        results = cocktails.filter((cocktail) => {
+            const hasIngredient = cocktail.ingredients.some(
+                (ingredient) => ingredient.toLowerCase() === ingredientToExclude
+            );
+
+            const matchesKeyword = cocktail.name.toLowerCase().includes(keyword.toLowerCase());
+
+            // Retornar solo los cócteles que no contienen el ingrediente específico y no coinciden con la keyword
+            return !hasIngredient && matchesKeyword;
+        });
     } else if (keyword) {
-      results = cocktails.filter((cocktail) =>
-        cocktail.name.toLowerCase().includes(keyword.toLowerCase())
-      );
+        results = cocktails.filter((cocktail) =>
+            cocktail.name.toLowerCase().includes(keyword.toLowerCase())
+        );
     }
-    
-    
-    
+
+
+
 
     const setTitleToPopup = (title) => {
         const getCocktail = cocktails.filter((cocktail) => {
@@ -102,29 +102,39 @@ function Search() {
                                 <input onChange={(e) => setKeyword(e.target.value)} placeholder='Margarita' type='search' />
                             </div>
 
-                            <div className='Options'>
+                            <div className='Options-S'>
                                 <div className='Options__Container'>
-                                    <span>Restricciones de Ingredientes</span>
-                                    <div className='selectOption'>
-                                        <input
-                                        onClick={openOption}
-                                        onBlur={() => {
-                                            setOpenSelect(false);
-                                        }}
-                                        type='search'
-                                        id='league'
-                                        ref={leagueInput}
-                                        placeholder='Selecciona Ingrediente'
-                                        readOnly
-                                        />
+                                    <div className='Suggestions'>
+                                        <div className='Information-Results'>
+                                            <span>
+                                                {keyword === '' ? 'Sugerencias:' : 'Resultados:'}
+                                            </span>
+                                        </div>
                                     </div>
 
-                                    <div className={openSelect ? 'options active': 'options'}>
-                                        {getUniqueIngredients().map((item, index)=> (
-                                            <li onClick={selectValue} key={index}>
-                                                {item}
-                                            </li>
-                                        ))}
+                                    <div className='Filters'>
+                                        <span>Restricciones de Ingredientes</span>
+                                        <div className='selectOption'>
+                                            <input
+                                                onClick={openOption}
+                                                onBlur={() => {
+                                                    setOpenSelect(false);
+                                                }}
+                                                type='search'
+                                                id='league'
+                                                ref={leagueInput}
+                                                placeholder='Selecciona Ingrediente'
+                                                readOnly
+                                            />
+                                        </div>
+
+                                        <div className={openSelect ? 'options active' : 'options'}>
+                                            {getUniqueIngredients().map((item, index) => (
+                                                <li onClick={selectValue} key={index}>
+                                                    {item}
+                                                </li>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -133,13 +143,6 @@ function Search() {
                         <section className='Results-Search'>
                             <div className={keyword === '' ? 'Results-Search__Container' : 'Results-Search__Container active'}>
 
-
-                                <div className='Information-Results'>
-                                    <span>
-                                        {keyword === '' ? 'Sugerencias:' : 'Resultados:'}
-                                    </span>
-                                </div>
-
                                 <div className='Results'>
                                     <div className='Results__Container'>
                                         {
@@ -147,7 +150,7 @@ function Search() {
                                                 return (
                                                     <div onClick={getTitle} key={i} title={item.name} className='Item-Result'>
                                                         <div title={item.name} className='Item-Result-Img'>
-                                                        {loading && <p className='Loading'>...</p>}
+                                                            {loading && <p className='Loading'>...</p>}
                                                             <img
                                                                 title={item.name}
                                                                 src={PATH(`./${item.img}`)}
