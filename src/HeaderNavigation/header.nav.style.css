@@ -21,6 +21,7 @@ header {
     height: 100vh;
 }
 
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -40,6 +41,14 @@ header nav {
     position: relative;
     width: 100%;
     padding: 10px;
+}
+
+.Nav_Container .Brand {
+    width: 70px;
+}
+
+.Nav_Container .Brand img {
+    width: 100%;
 }
 
 header nav a svg {
