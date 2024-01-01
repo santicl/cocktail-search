@@ -88,17 +88,6 @@ h2 {
     color: rgb(143, 31, 31);
 }
 
-.Input-Type-Search button {
-    width: 120px;
-    height: 35px;
-    background: rgb(143, 31, 31);
-    border-radius: 8px;
-    border: 1px solid rgb(143, 31, 31);
-    outline: none;
-    color: white;
-    font-size: 17px;
-}
-
 .Results-Search, .Results-Search__Container {
     display: flex;
     justify-content: center;
@@ -135,7 +124,7 @@ h2 {
     justify-content: center;
     align-items: baseline;
     width: 100%;
-    height: 65vh; /* Ajusta la altura máxima según tus necesidades */
+    height: 58vh; /* Ajusta la altura máxima según tus necesidades */
     margin-top: 10px;
     overflow-y: auto; /* Habilita el desplazamiento vertical */
 }
@@ -173,6 +162,32 @@ h2 {
 
 .Not-write {
     color: rgb(67, 66, 66);
+}
+
+.Button-Delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    position: absolute;
+    top: calc(100% / 5);
+    right: 4px;
+    border: none;
+    outline: none;
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: all ease-in-out .2s;
+}
+
+.Button-Delete.active {
+    visibility: visible;
+}
+
+.Button-Delete svg {
+    color: black;
+    width: 100%;
 }
 
 .Item-Result {
