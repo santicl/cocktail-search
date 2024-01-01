@@ -277,7 +277,11 @@ h2 {
 
 .Options__Container span {
     font-size: 12px;
-    color: rgb(84, 20, 20);
+    color: white;
+}
+
+.Options__Container .Rest {
+    color: #b32f2f;
 }
 
 .selectOption {
@@ -408,7 +412,7 @@ h2 {
 
     .Options__Container span {
         font-size: 10px;
-        color: rgb(84, 20, 20);
+        color: white;
     }
     
     .selectOption {
@@ -435,7 +439,8 @@ h2 {
     }
     
     .options {
-        max-height: 154px;
+        width: 154px;
+        max-height: 220px;
         border-radius: 10px;
         top: 100%;
         transform: translateY(0);

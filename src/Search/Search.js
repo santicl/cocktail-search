@@ -113,7 +113,7 @@ function Search() {
                                     </div>
 
                                     <div className='Filters'>
-                                        <span>Restricciones de Ingredientes</span>
+                                        <span className='Rest'>Restricciones de Ingredientes</span>
                                         <div className='selectOption'>
                                             <input
                                                 onClick={openOption}
