@@ -133,7 +133,7 @@ h2 {
 .Results {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
     height: 65vh; /* Ajusta la altura máxima según tus necesidades */
     margin-top: 10px;
@@ -401,10 +401,6 @@ h2 {
 
     h2 {
         font-size: 34px;
-    }
-
-    .Results {
-        height: 75vh;
     }
 
     .Options {
