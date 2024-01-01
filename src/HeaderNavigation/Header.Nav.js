@@ -1,6 +1,6 @@
 import imgBack from '../img/back-cocktails.png'
 import "./header.nav.style.css";
-import Brand from '../img/brand.png';
+import Brand from '../img/brand-2.png';
 
 function HeaderNav() {
     const mouseDownEffect = () => {

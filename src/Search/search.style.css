@@ -12,9 +12,10 @@
     font-weight: 900;
 }
 
-.Not-write {
-    margin: 0 0 auto;
+button {
+    transition: all ease-in-out .2s;
 }
+
 
 h2 {
     font-size: 55px;
@@ -159,10 +160,11 @@ h2 {
     overflow-x: hidden;
 }
 
-
-.Not-write {
+.Results__Container p {
+    text-align: center;
     color: rgb(67, 66, 66);
 }
+
 
 .Button-Delete {
     display: flex;
