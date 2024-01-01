@@ -344,6 +344,7 @@ h2 {
     opacity: 0;
     transition:  0.3s ease;
     color: #c9c9c9;
+    z-index: 3;
 }
 
 .options.active {
