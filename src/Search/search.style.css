@@ -160,7 +160,6 @@ h2 {
   }
 
 .Results__Container {
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -181,6 +180,7 @@ h2 {
     justify-content: start;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 10px;
     padding: 10px;
     gap: 10px;
     width: 100%;
@@ -385,6 +385,9 @@ h2 {
     h2 {
         font-size: 39px;
     }
+    .Item-Result {
+        width: 90%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -440,16 +443,6 @@ h2 {
     
     .options {
         width: 154px;
-        max-height: 220px;
-        border-radius: 10px;
-        top: 100%;
-        transform: translateY(0);
-        overflow: hidden;
-        overflow-y: auto;
-        visibility: hidden;
-        opacity: 0;
-        transition:  0.3s ease;
-        color: #c9c9c9;
     }
     
     .options.active {
